@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaçaodeloading</title>
+</head>
+<style>
+    body{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        transform: scale(5);
+    }
+
+    .cloader{
+        animation: is-rotating 1s infinite;
+        border: 6px solid #e5e5e5;
+        border-radius: 50%;
+        border-top-color: #cc2c46;
+        height: 50px;
+        width: 50px;
+    }
+    @keyframes is-rotating {
+        to{
+            transform: rotate(1turn);
+        }
+    }
+</style>
+<body>
+    <div class="cloader"></div>
+    
+</body>
+</html>
